@@ -15,6 +15,8 @@
 -- The shortest distance is 1.00 from point (-1,-1) to (-1,2). So the output should be:
  
 
+
+
 -- | shortest |
 -- |----------|
 -- | 1.00     |
