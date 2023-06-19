@@ -10,7 +10,7 @@
 -- +-------------+---------+
 -- timestamp is the primary key column for this table.
  
-
+ 
 -- Write a SQL query for a report that provides the pairs (actor_id, director_id) where the actor have cooperated with the director at least 3 times.
 
 -- Example:
@@ -35,6 +35,11 @@
 -- | 1           | 1           |
 -- +-------------+-------------+
 -- The only pair is (1, 1) where they cooperated exactly 3 times.
+my sol:
+select actor_id ,director_id
+from ActorDirector
+group by actor_id,director_id
+having count(director_id)>=3
 
 -- Solution 
 Select actor_id, director_id
